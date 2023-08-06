@@ -1,0 +1,170 @@
+
+.pswp_alerts {
+}
+
+.pswp-error-alert{
+    position: absolute;
+    z-index: 3000;
+    width: 100%;
+}
+
+.favorite__icon_move_right{
+    left: 90px !important;
+}
+
+.favorite-icon{
+    background-image: url("/images/heart.png");
+    height: 18px;
+    width: 18px;
+    background-size: 18px 18px;
+    background-position: 0px 0px;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    margin: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.video-icon{
+    background-image: url("/images/icon_play.png");
+    height: 18px;
+    width: 16px;
+    background-size: 16px 18px;
+    background-position: 0px 0px;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    margin: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.duration__label{
+    height: 18px;
+    text-align: left;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    position: absolute;
+    bottom: 10px;
+    left: 36px;
+    margin: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.photo-cell {
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.photo-cell:hover {
+    border: 1px solid #2fa5ff;
+}
+
+.photo-cell.selected {
+    border: 1px solid #2fa5ff;
+}
+
+.photo-cell .button-cell-options {
+    cursor: pointer;
+    background-position: 0 -3px;
+    height: 22px;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    margin: 0;
+    z-index: 50;
+    background-image: url("/images/white-more.png");
+}
+
+.photo-cell .button-cell-options:hover {
+    background-image: url("/images/white-more-s.png");
+    cursor: pointer;
+}
+
+.photo-cell .button-cell-options:active {
+    background-image: url("/images/white-more.png");
+    cursor: pointer;
+}
+
+.photo-cell .button-cell-options:focus {
+    background-image: url("/images/white-more.png");
+    cursor: pointer;
+}
+
+.photo-cell .button-cell-options.disabled{
+    background-image: url("/images/white-more-dis.png");
+    cursor: default !important;
+}
+
+.photo-cell .button-cell-contextmenu {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    margin: 0;
+    z-index: 50;
+}
+
+.photo-cell .bs-checkbox {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    margin: 0;
+    z-index: 50;
+}
+
+.photo-gallery-body-checkbox{
+    
+}
+
+.photo-gallery-header-select-all-checkbox{
+
+}
+
+.photo-cell .glyphicon-option-horizontal {
+    font-size: 23px;
+}
+
+.photo-gallery-header {
+    clear: both;
+    text-align: center;
+    height: 44px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    background: #FFF;
+    border: 1px solid #e1e1e1;
+}
+
+.photo-gallery-header .select-all-checkbox {
+    float: left;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    width: 40px;
+    margin: 0;
+}
+
+.photo-cell-overlay {
+    position: absolute; 
+    bottom: 0; 
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background-image: url("/images/photo-image-shadow.png");
+    /*background-image: url("/images/checkbox-indeterminate.png");*/
+    color: #f1f1f1; 
+    width: 100%;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    padding: 64px;
+    text-align: center;
+    pointer-events: none;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="264px" height="88px" viewBox="0 0 264 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>IconsSprite</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="IconsSprite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_download" transform="translate(50.000000, 50.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M7,23 L25,23 L25,25 L7,25 L7,23 Z M10.001,15.785 L11.531,14 L15.031,17 L15.031,7 L17.031,7 L17.031,17 L20.531,14 L21.999,15.785 L16.031,21 L10.001,15.785 Z" id="Combined-Shape"></path>
+        </g>
+        <g id="ic_maximize" transform="translate(6.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M7,23 L7,18 L9,18 L9,21 L12,21 L12,23 L7,23 Z M7,9 L12,9 L12,11 L9,11 L9,14 L7,14 L7,9 Z M25,9 L25,14 L23,14 L23,11 L20,11 L20,9 L25,9 Z M25,23 L20,23 L20,21 L23,21 L23,18 L25,18 L25,23 Z" id="Shape"></path>
+        </g>
+        <g id="ic_minimize" transform="translate(50.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M12,18 L12,23 L10,23 L10,20 L7,20 L7,18 L12,18 Z M12,14 L7,14 L7,12 L10,12 L10,9 L12,9 L12,14 Z M20,14 L20,9 L22,9 L22,12 L25,12 L25,14 L20,14 Z M20,18 L25,18 L25,20 L22,20 L22,23 L20,23 L20,18 Z" id="Shape"></path>
+        </g>
+        <g id="ic_cross" transform="translate(6.000000, 50.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="Shape" points="14.586 16 8.93 10.344 10.344 8.93 16 14.586 21.656 8.93 23.07 10.344 17.414 16 23.07 21.656 21.656 23.07 16 17.414 10.344 23.07 8.93 21.656"></polygon>
+        </g>
+        <g id="ic_forward" transform="translate(94.000000, 43.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="Shape" points="17.785 21.998 16 20.468 19 16.968 9 16.968 9 14.968 19 14.968 16 11.468 17.785 10 23 15.968"></polygon>
+        </g>
+        <g id="ic_back" transform="translate(138.000000, 43.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="Shape" points="14.215 21.998 16 20.468 13 16.968 23 16.968 23 14.968 13 14.968 16 11.468 14.215 10 9 15.968"></polygon>
+        </g>
+        <g id="ic_minus" transform="translate(137.500000, 6.500000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M23.457,22.043 L22.044,23.457 L18.794,20.207 L20.207,18.793 L23.457,22.043 Z M15,21.25 C11.5477864,21.25 8.75,18.4522136 8.75,15 C8.75,11.5477864 11.5477864,8.75 15,8.75 C18.4522136,8.75 21.25,11.5477864 21.25,15 C21.25,18.4522136 18.4522136,21.25 15,21.25 Z M15,19.75 C17.6237864,19.75 19.75,17.6237864 19.75,15 C19.75,12.3762136 17.6237864,10.25 15,10.25 C12.3762136,10.25 10.25,12.3762136 10.25,15 C10.25,17.6237864 12.3762136,19.75 15,19.75 Z M12.5,14.5 L17.5,14.5 L17.5,15.5 L12.5,15.5 L12.5,14.5 Z" id="Combined-Shape"></path>
+        </g>
+        <g id="ic_plus" transform="translate(93.500000, 6.500000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M23.457,22.043 L22.043,23.457 L18.793,20.207 L20.207,18.793 L23.457,22.043 Z M15,21.25 C11.5477864,21.25 8.75,18.4522136 8.75,15 C8.75,11.5477864 11.5477864,8.75 15,8.75 C18.4522136,8.75 21.25,11.5477864 21.25,15 C21.25,18.4522136 18.4522136,21.25 15,21.25 Z M15,19.75 C17.6237864,19.75 19.75,17.6237864 19.75,15 C19.75,12.3762136 17.6237864,10.25 15,10.25 C12.3762136,10.25 10.25,12.3762136 10.25,15 C10.25,17.6237864 12.3762136,19.75 15,19.75 Z M14.508847,14.5 L14.543,12.491 L15.543,12.508 L15.509136,14.5 L17.5,14.5 L17.5,15.5 L15.492136,15.5 L15.458,17.508 L14.458,17.491 L14.491847,15.5 L12.5,15.5 L12.5,14.5 L14.508847,14.5 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting section name. */
+"Troubleshooting" = "故障排除";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Clear Recents on next launch" = "下次启动时清除最近历史";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Disable Auto Sync on next launch" = "下次启动时禁用自动同步";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Detailed filesystem logging on next launch" = "下次启动时记录详细文件系统日志";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Drop Recently Deleted on next launch" = "下次启动时清除最近删除文件";

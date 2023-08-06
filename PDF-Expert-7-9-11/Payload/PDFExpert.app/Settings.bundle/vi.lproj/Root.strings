@@ -1,0 +1,14 @@
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting section name. */
+"Troubleshooting" = "Khắc phục sự cố";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Clear Recents on next launch" = "Xoá mục Gần đây ở lần mở sau";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Disable Auto Sync on next launch" = "Tắt Tự động đồng bộ ở lần mở sau";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Detailed filesystem logging on next launch" = "Log chi tiết tệp hệ thống cho lần mở tiếp theo";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Drop Recently Deleted on next launch" = "Dọn dẹp Đã xoá gần đây cho lần mở tiếp theo";

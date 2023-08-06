@@ -1,0 +1,236 @@
+
+
+.global-select-panel {
+    position: fixed;
+    left: calc(50% - 240px);
+    z-index: 1001;
+    width: 480px;
+    height: 68px;
+    border-radius: 4px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.global-select-panel-bottom-position-top {
+    bottom: 132px;
+}
+
+.global-select-panel-bottom-position-default {
+    bottom: 52px;
+}
+
+.global-select-panel__status {
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 24px;
+    max-width: 224px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap;
+    
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.global-select-panel__actions {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 0 0 230px;
+    -ms-flex: 0 0 230px;
+    flex: 0 0 230px;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.btn-multi-delete-icon {
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 0px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.btn-multi-download-icon {
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 0px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.btn-multi-delete {
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #2b2b2b;
+    text-shadow: none;
+    background-image: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    outline: none !important;
+    box-shadow: none !important;
+    
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.btn-multi-delete:hover {
+    color: #2b2b2b;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-multi-delete:active {
+    color: #2b2b2b;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-multi-download {
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #2b2b2b;
+    text-shadow: none;
+    background-image: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    outline: none !important;
+    box-shadow: none !important;
+    
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap;
+}
+
+.btn-multi-download:hover {
+    color: #2b2b2b;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-multi-download:active {
+    color: #2b2b2b;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 600px) {
+    
+    .global-select-panel {
+        left: calc(50% - 45%);
+        width: 90%; 
+    }
+    
+    .global-select-panel-bottom-position-top {
+        bottom: 110px;
+    }
+
+    .global-select-panel-bottom-position-default {
+        bottom: 30px;
+    }
+    
+    .global-select-panel__status {
+        font-size: 14px;
+    }
+
+}

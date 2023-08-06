@@ -1,0 +1,14 @@
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting section name. */
+"Troubleshooting" = "Solução de problemas";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Clear Recents on next launch" = "Limpar a lista de recentes ao reabrir";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Disable Auto Sync on next launch" = "Desabilitar sincronização automática ao reabrir";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Detailed filesystem logging on next launch" = "Registro do sistema de arquivos detalhado na próxima inicialização";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Drop Recently Deleted on next launch" = "Limpar os recentemente apagados na próxima inicialização";

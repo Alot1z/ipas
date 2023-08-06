@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/PDFExpert.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>PlugIns/Copy to PDF Expert.appex/SC_Info/Copy to PDF Expert.sinf</string>
+		<string>PlugIns/PDFExpExtFileProvider.appex/SC_Info/PDFExpExtFileProvider.sinf</string>
+		<string>PlugIns/PDFExpExtFileProviderUI.appex/SC_Info/PDFExpExtFileProviderUI.sinf</string>
+		<string>PlugIns/PDFExpExtWidget.appex/SC_Info/PDFExpExtWidget.sinf</string>
+		<string>PlugIns/Share to PDF Expert.appex/SC_Info/Share to PDF Expert.sinf</string>
+		<string>SC_Info/PDFExpert.sinf</string>
+	</array>
+</dict>
+</plist>

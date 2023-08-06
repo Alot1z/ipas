@@ -1,0 +1,14 @@
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting section name. */
+"Troubleshooting" = "トラブルシューティング";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Clear Recents on next launch" = "次回起動時に履歴を消去する";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Disable Auto Sync on next launch" = "次回起動時に自動同期を無効にする";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Detailed filesystem logging on next launch" = "次回起動時にファイルシステムの詳細なログを記録する";
+
+/* Global iOS Settings. PDF Expert/Documents app settings. Troubleshooting option. */
+"Drop Recently Deleted on next launch" = "次回起動時に最近削除した項目を消去する";
