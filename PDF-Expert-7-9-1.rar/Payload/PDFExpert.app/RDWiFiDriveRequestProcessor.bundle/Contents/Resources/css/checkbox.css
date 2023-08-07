@@ -1,0 +1,51 @@
+
+/*http://www.csscheckbox.com/checkbox/43498/blue-check-small-shadow-css-checkbox/*/
+
+input[type=checkbox].css-checkbox {
+    position:absolute; 
+    z-index:-1000;
+    left:-1000px; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0; 
+    border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /*padding-left:30px;*/
+    height:24px; 
+    width:24px;
+    display:inline-block;
+    line-height:24px;
+    font-size:24px;
+    vertical-align:middle;
+    cursor:pointer;
+    background-position: 0 0;
+    background-size: 24px 24px;
+    background-repeat:no-repeat;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-image: url(/images/checkbox-checked.png);
+}
+
+input[type=checkbox].css-checkbox:indeterminate + label.css-label { 
+    background-image: url(/images/checkbox-indeterminate.png);
+}
+
+label.css-label {
+    background-image: url(/images/checkbox.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

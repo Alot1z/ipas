@@ -1,0 +1,893 @@
+<!--
+ Copyright (c) 2012-2015, Pierre-Olivier Latour
+ All rights reserved.
+ 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ * Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ * The name of Pierre-Olivier Latour may not be used to endorse
+ or promote products derived from this software without specific
+ prior written permission.
+ 
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL PIERRE-OLIVIER LATOUR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-itunes-app" content="app-id=364901807">
+    <title>%title%</title>
+    <link rel="stylesheet" href="css/%page_hash%-bootstrap.css">
+    <link rel="stylesheet" href="css/%page_hash%-bootstrap-table.css">
+    <link rel="stylesheet" href="css/%page_hash%-bootstrap-theme.css">
+    <link rel="stylesheet" href="css/%page_hash%-jquery.fileupload.css">
+    <link rel="stylesheet" href="css/%page_hash%-index.css">
+    <link rel="stylesheet" href="css/%page_hash%-files-grid.css">
+    <link rel="stylesheet" href="css/%page_hash%-upload.css">
+    <link rel="stylesheet" href="css/%page_hash%-archive.css">
+    <link rel="stylesheet" href="css/%page_hash%-delete.css">
+    <link rel="stylesheet" href="css/%page_hash%-bootstrap-pincode-input.css">
+    <link rel="stylesheet" href="css/%page_hash%-justifiedGallery.css">
+    <link rel="stylesheet" href="css/%page_hash%-photoswipe.css">
+    <link rel="stylesheet" href="css/%page_hash%-photo-gallery.css">
+    <link rel="stylesheet" href="default-skin/%page_hash%-default-skin.css">
+    <link rel="stylesheet" href="css/%page_hash%-checkbox.css">
+    <link rel="stylesheet" href="css/%page_hash%-select.css">
+    <link rel="stylesheet" href="css/%page_hash%-notification_panel.css">
+
+    <!--https://realfavicongenerator.net-->
+    
+    <link rel="shortcut icon" href="/images/%page_hash%-favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/%page_hash%-apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/%page_hash%-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/%page_hash%-favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/%page_hash%-jquery.min.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-jquery.jeditable.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-jquery.fileupload.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-bootstrap.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-tmpl.min.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-bootstrap-table.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-shortcut.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-echo.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-websocket.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-sid.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-archive.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-select.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-delete.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-bootstrap-pincode-input.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-countdown.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-pincodeauth.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-layout.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-notification_panel.js"></script>
+
+    
+<!--    Cross-browser wrapper for window.console object.-->
+<!--    If you try to use console.log() in Internet Explorer version 9 or less,-->
+<!--    it will throw out an error and make your script stop.-->
+<!--    The script fixes this problem and makes console.log() usage cross-browser.-->
+<!--    It will not log messages in IE9 or less, because there is no technical way for that,-->
+<!--    but your JS will also not crash because of using console object.-->
+    <script type="text/javascript" src="js/%page_hash%-log.js"></script>
+
+    <script type="text/javascript">
+        var _device = "%device%";
+    </script>
+    <script type="text/javascript" src="js/%page_hash%-index.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-actions.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-upload.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-breadcrumb.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-error.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-utils.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-popover.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-jquery.justifiedGallery.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-photo-gallery.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-photoswipe-ui-default.js"></script>
+    <script type="text/javascript" src="js/%page_hash%-photoswipe.js"></script> 
+    
+</head>
+
+<body class="dropzone">
+    
+<!--<pre id="log-id"></pre>    -->
+
+<div class="hidden">
+    <script type="text/javascript">
+        var images = new Array()
+        function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image()
+                images[i].src = preload.arguments[i]
+            }
+        }
+        preload(
+                "/images/app-icon.png",
+                "/images/more.png",
+                "/images/navigation-folder.png",
+                "/images/options-delete.png",
+                "/images/create-folder-dis.png",
+                "/images/options-download.png",
+                "/images/create-folder-s.png",
+                "/images/options-rename.png",
+                "/images/create-folder.png",
+                "/images/sort-arrow-down.png",
+                "/images/download-dis.png",
+                "/images/sort-arrow-up.png",
+                "/images/download-s.png",
+                "/images/upload-cancel.png",
+                "/images/download.png",
+                "/images/upload-fail.png",
+                "/images/more-s.png",
+                "/images/upload-success.png",
+                "/images/breadcrumb_photos.png",
+                "/images/checkbox-checked.png",
+                "/images/checkbox-indeterminate.png",
+                "/images/checkbox.png",
+                "/images/photo-image-shadow.png",
+                "/images/white-more-dis.png",
+                "/images/white-more-s.png",
+                "/images/white-more.png",
+                "/images/wifi-transfer-grid-s.png",
+                "/images/wifi-transfer-grid.png",
+                "/images/separator.png",
+                "/images/wifi-transfer-list.png",
+                "/images/wifi-transfer-list-s.png",
+                
+                "/fileicons?path=/_file.png",
+                "/fileicons?path=/_file.jpg",
+                "/fileicons?path=/_file.jpeg",
+                "/fileicons?path=/_file.pdf",
+                "/fileicons?path=/_file.txt",
+                "/fileicons?path=/_file.html",
+                "/fileicons?path=/_file.key",
+                "/fileicons?path=/_file.mov",
+                "/fileicons?path=/_file.mpg",
+                "/fileicons?path=/_file.mpeg",
+                "/fileicons?path=/_file.rar",
+                "/fileicons?path=/_file.zip",
+                "/fileicons?path=/_file.mp3",
+                "/fileicons?path=/_file.m3u",
+                "/fileicons?path=/_file.mp4",
+                "/fileicons?path=/_file.flac",
+                "/fileicons?path=/_file.guide",
+                "/fileicons?path=/_file.wma",
+                );
+    </script>
+</div>
+
+<div class="global-dropzone-border global-dropzone-border--left"></div>
+<div class="global-dropzone-border global-dropzone-border--right"></div>
+<div class="global-dropzone-border global-dropzone-border--top"></div>
+<div class="global-dropzone-border global-dropzone-border--bottom"></div>
+
+<div class="container">
+
+    <div class="page-header-section">
+        <div class="page-header-row">
+            <button type="button" class="btn btn-primary fileinput-button btn-upload common-button" id="btn-upload">
+                %upload_files%
+                <input id="file-upload" type="file" name="files[]" multiple>
+            </button>
+            <div id = "page-title" class="page-title">
+                <div>%header%</div>
+            </div>
+            <div class="page-detail">
+                <div>%prologue%</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alerts"></div>
+
+    <div class="panel-navigation" id = "panel-navigation">
+        <div class="actions-container">
+            <button type="button" class="btn btn-create-folder" id="btn-create-folder"></button>
+        </div>
+        <div class="path-container" id = "path-container">
+            <ol class="breadcrumb" id="path"></ol>
+        </div>
+    </div>
+
+    <script type="text/x-tmpl" id="template-albums-grid-body">  
+        <div class="photo-album-thumbnail-container col-xs-6 col-md-3 row-file">   
+            <div class="thumbnail photo-album-thumbnail">
+                <div class="img-place photo-album-img-place">
+                    <button type="button" class="photo-album-button column-name__icon btn-file-icon button-cell-open"><img class="img-responsive fade-image" src={%=o.gridIcon%}/></button>
+                </div> 
+                <div class="item-info photo-album-item-info">
+                    <div class="item-name {% if (o.directory) { %} folder-name {% } else { %} file-name {% } %}" title="{%=o.filename%}"></div>  
+                    <div class="m-b-0">
+                        {% if (o.actionsDisabled===false) { %} 
+                            <a tabindex="0" id="button-cell-options" class="btn button-cell-options pull-right"
+                                    role="button" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual" aria-hidden="true"
+                                    data-original-title="" title=""></a>
+                        {% } %}
+                        <span class="text-small text-gray-light" >
+                            {% if (o.sizeStr != null) { %}
+                                {%=o.sizeStr%}
+                            {% } %}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    
+    <script type="text/x-tmpl" id="template-files-grid-body">
+
+            <div class="thumbnail-container col-xs-6 col-md-3 row-file  {% if (o.directory && o.readOnly===false) { %} dropzone folder {% } %}">  
+            
+            <div class="thumbnail">
+
+                {% if (o.readOnly===false) { %} 
+                    <span class="bs-checkbox files-grid-body-checkbox">
+                        <input data-index="0" name="btSelectItem" type="checkbox" class="css-checkbox" id={%=o.dataIndex%}>
+                        <label for={%=o.dataIndex%} class="css-label"></label>
+                    </span>
+                {% } %}
+
+                <!-- next block must be in 1 line without splitting -->
+                <div class="img-place">
+                    {% if (o.directory == null) { %}
+                        <button type="button" class="column-name__icon btn-file-icon button-cell-download"><img class="img-responsive" src={%=o.gridIcon%} data-echo="/filethumbnails?path={%=encodeURIComponent(o.path)%}&sid={%=getSID()%}" data-echo-icon="{%=o.gridIcon%}" height = "32"/></button>
+                    {% } else { %}
+                        <button type="button" class="dir column-name__icon btn-file-icon button-cell-open"><img class="img-responsive" src={%=o.gridIcon%}/></button>
+                    {% } %}
+                </div>
+                    
+                <div class="item-info">
+                    <div class="item-name {% if (o.directory) { %} folder-name {% } else { %} file-name {% } %}" title="{%=o.filename%}"></div>  
+                    <div class="m-b-0">
+                        {% if (o.actionsDisabled===false) { %} 
+                            <a tabindex="0" id="button-cell-options" class="btn button-cell-options pull-right"
+                                    role="button" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual" aria-hidden="true"
+                                    data-original-title="" title=""></a>
+                            <a tabindex="0" class="btn button-cell-contextmenu hidden" role="button" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual" id="button-cell-contextmenu-id"></a>
+                        {% } %}
+                        {% if ( _contentSort.indexOf("sortBySize") != -1) { %}
+                                <span class="text-small text-gray-light" {% if (o.dateStr != null) { %} title="Added: {%=o.dateStr%}" {% } %} >
+                                        {% if (o.sizeStr != null) { %}
+                                                {%=o.sizeStr%}
+                                        {% } %}
+                                </span>
+                                {% } else { %}
+                                <span class="text-small text-gray-light" {% if (o.sizeStr != null) { %} title="Size: {%=o.sizeStr%}" {% } %} >
+                                        {% if (o.dateStr != null) { %}
+                                                {%=o.dateStr%}
+                                        {% } %}
+                                </span>
+                        {% } %}
+                    </div>
+                </div>
+                
+                <div class="local-dropzone-border local-dropzone-border--left"></div>
+                <div class="local-dropzone-border local-dropzone-border--right"></div>
+                <div class="local-dropzone-border local-dropzone-border--top"></div>
+                <div class="local-dropzone-border local-dropzone-border--bottom"></div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/x-tmpl" id="template-files-grid-header">
+            <div class="toggle-view" id="toggle-view-grid">
+                <a href="javascript:actionGridLayout();" class="btn-toggle-view" title="%switch_to_preview_mode%">
+                    <img src="/images/wifi-transfer-grid-s.png" class = "view-mode-icon view-mode-icon-grid"/>
+                </a>
+                <img class="separator" src="/images/separator.png" />
+                <a href="javascript:actionListLayout();" class="btn-toggle-view" title="%switch_to_list_view%">
+                    <img src="/images/wifi-transfer-list.png" class = "view-mode-icon view-mode-icon-list"/>
+                </a>
+            </div>
+
+            <span class="bs-checkbox select-all-checkbox files-grid-header-select-all-checkbox" data-field="state">
+                <input data-index="0" name="btSelectAll" type="checkbox" class="css-checkbox" id="files-grid-header-select-all-checkbox">
+                <label for="files-grid-header-select-all-checkbox" class="css-label"></label>    
+            </span>
+
+            <span class="table-sort-control-container">
+                <a class="table-sort-control" id="action-sort-by-name" href="javascript:actionSortByName();">
+                    {% if (o.contentSort == "sortByNameAsc") { %}
+                        <img class="sort-icon sort-icon-up" src = "/images/sort-arrow-up.png"/>
+                        {% } else if (o.contentSort == "sortByNameDesc") { %}
+                        <img class="sort-icon sort-icon-down" src = "/images/sort-arrow-down.png"/>
+                    {% } %}
+                    <span class="table-sort-control-title">%name%</span>
+                </a>
+
+                <a class="table-sort-control" id="action-sort-by-date" href="javascript:actionSortByDate();">
+                    {% if (o.contentSort == "sortByDateAsc") { %}
+                        <img class="sort-icon sort-icon-up" src = "/images/sort-arrow-up.png"/>
+                        {% } else if (o.contentSort == "sortByDateDesc") { %}
+                        <img class="sort-icon sort-icon-down" src = "/images/sort-arrow-down.png"/>
+                    {% } %}
+                    <span class="table-sort-control-title">%date%</span></a>
+
+                <a class="table-sort-control" id="action-sort-by-size" href="javascript:actionSortBySize();">
+                    {% if (o.contentSort == "sortBySizeAsc") { %}
+                        <img class="sort-icon sort-icon-up" src = "/images/sort-arrow-up.png"/>
+                        {% } else if (o.contentSort == "sortBySizeDesc") { %}
+                        <img class="sort-icon sort-icon-down" src = "/images/sort-arrow-down.png"/>
+                    {% } %}
+                    <span class="table-sort-control-title">%size%</span></a>
+            
+            </span>
+    </script>
+    
+    <script type="text/x-tmpl" id="template-files-table-body">
+        <tr class="row-file {% if (o.directory && o.readOnly===false) { %} dropzone {% } %}">
+
+            <td class="bs-checkbox select-row-checkbox files-table-body-checkbox" id="row-checkbox">
+                {% if (o.readOnly===false) { %} 
+                    <input data-index="0" name="btSelectItem" type="checkbox" class="css-checkbox" id={%=o.dataIndex%}>
+                    <label for={%=o.dataIndex%} class="css-label"></label>
+                {% } %}
+            </td>
+
+            <td class="column-icon">
+                {% if (o.directory == null) { %}
+                    <button type="button" class="column-name__icon btn-file-icon button-cell-download">
+                        <img src={%=o.icon%} height = "32"/>
+                    </button>
+                    {% } else { %}
+                    <button type="button" class="column-name__icon btn-file-icon button-cell-open">
+                        <img src={%=o.icon%} height = "32"/>
+                    </button>
+                {% } %}
+            </td>
+            
+            <td class="column-name">
+                <span class="column-name__text {% if (o.directory) { %} folder-name {% } else { %} file-name {% } %}"></span>   
+                {% if (o.readOnly===false) { %} 
+                    <span class="column-name__actions hidden">
+                        <button type="button" class="btn btn-single-rename" id = "btn-single-rename-id" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual"></button>
+                        <button type="button" class="btn btn-single-download" id = "btn-single-download-id" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual"></button>
+                        <button type="button" class="btn btn-single-delete" id = "btn-single-delete-id" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual"></button>
+                    </span>
+                {% } %}  
+            </td>
+            
+            <td class="column-date">
+                {% if (o.dateStr != null) { %}
+                    <p>{%=o.dateStr%}</p>
+                {% } %}
+            </td>
+            <td class="column-size" data-size={%=o.size%}>
+                {% if (o.sizeStr != null) { %}
+                    <p>{%=o.sizeStr%}</p>
+                {% } %}
+            </td>
+            
+            <td class="column-options">
+                {% if (o.actionsDisabled===false) { %} 
+                    <a tabindex="0" class="btn button-cell-options" role="button" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual" id="button-cell-options"></a>
+                    <a tabindex="0" class="btn button-cell-contextmenu" role="button" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual" id="button-cell-contextmenu-id"></a>
+                {% } %}  
+            </td>
+            
+                
+        </tr>
+    </script>
+
+    <script type="text/x-tmpl" id="template-files-table-header">
+            <tr class = "files-table-header" >
+              
+                <th class="th-checkbox select-all-checkbox files-table-header-select-all-checkbox" id="row-checkbox" data-field="state">
+                    <input data-index="0" name="btSelectAll" type="checkbox" class="css-checkbox" id="files-table-header-select-all-checkbox">
+                    <label for="files-table-header-select-all-checkbox" class="css-label"></label>
+                </th>
+
+                <th colspan="2" class="th-name">
+                    <a class="table-sort-control" id="action-sort-by-name" href="javascript:actionSortByName();">
+                        <div>
+                            {% if (o.contentSort == "sortByNameAsc") { %}
+                                <img class="sort-icon sort-icon-up" src = "/images/sort-arrow-up.png"/>
+                                {% } else if (o.contentSort == "sortByNameDesc") { %}
+                                <img class="sort-icon sort-icon-down" src = "/images/sort-arrow-down.png"/>
+                            {% } %}
+                            <font color="black"><span class = "table-sort-control-title">%name%</font></span>
+                        </div>
+                    </a>
+                </th>
+                <th class="th-date">
+                    <a class="table-sort-control" id="action-sort-by-date" href="javascript:actionSortByDate();">
+                    <div class>
+                        {% if (o.contentSort == "sortByDateAsc") { %}
+                            <img class="sort-icon sort-icon-up" src = "/images/sort-arrow-up.png"/>
+                            {% } else if (o.contentSort == "sortByDateDesc") { %}
+                            <img class="sort-icon sort-icon-down" src = "/images/sort-arrow-down.png"/>
+                        {% } %}
+                        <font color="black"><span class = "table-sort-control-title">%date%</font></span>
+                    </div>
+                    </a>
+                </th>
+                <th class="th-size">
+                    <a class="table-sort-control" id="action-sort-by-size" href="javascript:actionSortBySize();">
+                        <div>
+                            {% if (o.contentSort == "sortBySizeAsc") { %}
+                                <img class="sort-icon sort-icon-up" src = "/images/sort-arrow-up.png"/>
+                                {% } else if (o.contentSort == "sortBySizeDesc") { %}
+                                <img class="sort-icon sort-icon-down" src = "/images/sort-arrow-down.png"/>
+                            {% } %}
+                            <font color="black"><span class = "table-sort-control-title">%size%</font></span>
+                        </div>
+                    </a>
+                </th>
+                <th class="th-toggle-view">
+                    <div class="toggle-view" id="toggle-view-list">
+                        <a href="javascript:actionGridLayout();" class="btn-toggle-view" title="%switch_to_preview_mode%">
+                            <img src="/images/wifi-transfer-grid.png" class = "view-mode-icon view-mode-icon-grid"/>
+                        </a>
+                        <img class="separator" src="/images/separator.png" />
+                        <a href="javascript:actionListLayout();" class="btn-toggle-view" title="%switch_to_list_view%">
+                            <img src="/images/wifi-transfer-list-s.png" class = "view-mode-icon view-mode-icon-list"/>
+                        </a>
+                    </div>
+		</th>
+            </tr>
+    </script>
+    
+    <script type="text/x-tmpl" id="template-photo-gallery-header">
+        <span class="bs-checkbox select-all-checkbox photo-gallery-header-select-all-checkbox" data-field="state">
+            <input data-index="0" name="btSelectAll" type="checkbox" class="css-checkbox" id="photo-gallery-header-select-all-checkbox">
+            <label for="photo-gallery-header-select-all-checkbox" class="css-label"></label>
+        </span>
+    </script>
+    
+    <script type="text/x-tmpl" id="template-photo-gallery-body">
+            <a href={%=o.photoLargeThumbnail%} itemprop="contentUrl" data-index={%=o.dataIndex%} data-size={%=o.photoLargeThumbnailSize%} class="photo-cell" title={%=o.filename%} name={%=o.filename%}>
+
+                <span class="bs-checkbox photo-cell-checkbox photo-gallery-body-checkbox hidden">
+                    <input data-index="0" name="btSelectItem" type="checkbox" class="css-checkbox" id={%=o.dataIndex%}>
+                    <label for={%=o.dataIndex%} class="css-label"></label>
+                </span>
+                
+                {% if (o.actionsDisabled===false) { %} 
+                    <span tabindex="0" id="button-cell-options" class="btn button-cell-options hidden" role="button" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual" aria-hidden="true" data-original-title="" title=""></span>
+                    <span tabindex="0" class="btn button-cell-contextmenu hidden" role="button" data-toggle="popover" data-container="body" data-html="true" data-placement="auto" data-trigger="manual" id="button-cell-contextmenu-id"></span>     
+                {% } %}  
+                
+                {% if (o.favorite===true) { %} 
+                    <span class="favorite-icon hidden {% if (o.duration.length>0) { %} favorite__icon_move_right {% } %}"/>
+                {% } %} 
+                
+                {% if (o.duration.length>0) { %}
+                    <span class="video-icon"/>
+                    <label class="duration__label">{%=o.duration%}</label>
+                {% } %} 
+
+                <img class="photo-cell-image fade-image" alt={%=o.filename%} title={%=o.filename%} name={%=o.filename%} data-index={%=o.dataIndex%} data-src={%=o.photoSmallThumbnail%} src='/images/blank.gif' height={%=o.photoSmallThumbnailHeight%} width={%=o.photoSmallThumbnailWidth%} data-video-src={%=o.videoPath%} />
+                <div class="photo-cell-overlay  {% if (o.duration.length>0) { %} photo-cell-overlay-always-visible {% } else { %} hidden {% } %}"></div>
+
+            </a>
+     </script>
+
+    <div class="panel-content" id="panel-content">
+        
+        <table id="files-table"
+               data-toggle="table"
+               class="table table-no-bordered files-table"
+               data-classes="table table-no-bordered"
+               data-click-to-select="true"
+               cellspacing="0"
+               cellpadding="0">
+            <thead id="files-table-header"></thead>
+            <tbody id="files-table-body"></tbody>
+        </table>
+                                                
+        <div id="files-grid-header" class="files-grid-header hidden"></div>
+        <div id="files-grid-body" class="files-grid-body hidden"></div>
+ 
+        <div id="photo-gallery-header" class="photo-gallery-header hidden"></div>
+        <div id="photo-gallery-body" class="justified-gallery hidden photo-gallery-body"></div>
+
+        <div class = "files-table-no-data-placeholder hidden" id = "files-table-no-data-placeholder">
+            <div><img class = "files-table-no-data-placeholder-icon" src = "/images/empty-folder.png"/></div>
+            <div class = "files-table-no-data-placeholder-title">%this_folder_is_empty%</div>
+            <div class = "files-table-no-data-placeholder-detail">%drag_and_drop_files_onto_this_window_to_upload%</div>
+        </div>
+                     
+        <div class = "files-table-no-data-placeholder hidden" id = "photo-album-no-data-placeholder">
+            <div><img class = "files-table-no-data-placeholder-icon" src = "/images/empty-photo-folder.png"/></div>
+            <div class = "files-table-no-data-placeholder-title">%no_photos_in_album%</div>
+            <div class = "files-table-no-data-placeholder-detail">%add_photos_and_videos_to_this_album_in_photos_app%</div>
+        </div>
+
+    </div>
+
+    %epilogue%
+
+    <div class="footer content">
+        <p class="footer hidden">%footer%</p>
+    </div>
+
+    <div class="global-upload-panel hidden" id="global-upload-panel">
+        <div class="global-upload-panel__status" id="global-upload-status"></div>
+        <div class="global-upload-panel__details" id="global-upload-panel-details-id">
+            <span id="upload-dialog-opener">%details%</span>
+        </div>
+        <div class="global-upload-panel__progress" id="global-upload-progress"></div>
+    </div>
+
+    <div class="global-upload-dragover-hint global-upload-panel hidden" id="global-upload-dragover-hint">
+        <div class="global-upload-panel__hint" id="global-upload-panel__hint-id">
+            %drop_files_to_upload_to% <b id="global-upload-dragover-hint-folder"></b> %folder%
+        </div>
+    </div>
+    
+    <div class="global-upload-result-panel global-upload-panel hidden" id="global-upload-result-panel">
+        <div class="global-upload-result-panel__icon" id="global-upload-result-icon">
+            <img id="global-upload-result__icon_img" class = "global-upload-result-icon-img"/>
+        </div>
+        <div class="global-upload-result__status" id="global-upload-result-status"></div>
+        <div class="global-upload-result__action" id="global-upload-result-action__details">%details%</div>
+        <div class="global-upload-result__action" id="global-upload-result-action__close">%close%</div>
+    </div>
+    
+    <div class="global-archive-panel hidden" id="global-archive-panel">
+        <div class="global-archive-panel__status" id="global-archive-status"></div>
+        <div class="global-archive-panel__action" id="global-archive-action-cancel">%cancel%</div>
+        <div class="global-archive-panel__progress" id="global-archive-progress"></div>
+    </div>
+    
+    <div class="global-notification-panel hidden" id="global-notification-panel">
+        <div class="global-notification-panel__icon" id="global-notification-icon"></div>
+        <div class="global-notification-panel__text" id="global-notification-text">
+            <div class="global-notification-panel__status" id="global-notification-status">%open_app_to_continue_transfer%</div>
+            <div class="global-notification-panel__description" id="global-notification-description">%do_not_close_to_keep_connection_stable%</div>
+        </div>
+        <div class="global-notification-panel__action" id="global-notification-action-cancel">%close_connection%</div>
+        <div class="global-notification-panel__progress" id="global-notification-progress"></div>
+    </div>
+    
+    <div class="global-delete-panel hidden" id="global-delete-panel">
+        <div class="global-delete-panel__status" id="global-delete-status"></div>
+        <div class="global-delete-panel__action" id="global-delete-action-cancel">%cancel%</div>
+        <div class="global-delete-panel__progress" id="global-delete-progress"></div>
+    </div>
+                     
+    <div class="global-select-panel hidden" id="global-select-panel">
+        <div class="global-select-panel__status" id="global-select-status"></div>
+        <div class="global-select-panel__actions" id="global-select-actions">
+            <button type="button" class="btn-multi-delete" id="btn-multi-delete"><img class="btn-multi-delete-icon" src = "/images/mul-delete.png"/>%delete%</button>
+            <button type="button" class="btn-multi-download" id="btn-multi-download"><img class="btn-multi-download-icon" src = "/images/mul-download.png"/>%download%</button>    
+        </div>
+    </div>               
+    
+</div>
+            
+
+<div class="modal fade" id="modal-upload-id" tabindex="-1">
+    <div class="modal-dialog modal-upload-dialog">
+        <div class="modal-content modal-upload-content">
+            <div class="modal-header modal-upload-header">
+                <div class = "modal-upload-header-title-container">
+                    <h4 class="modal-upload-header__title" id="modal-upload-header">%uploaded_files%</h4>
+                    <span class="upload-actions-container">
+                        <button type="button" class="btn-upload-queue-action" id="btn-cancel-all-uploads-id">
+                            <span class="btn-cancel-all-uploads-text">%cancel_all_uploads%</span>
+                            <span class="btn-cancel-all-uploads-text-short">%cancel_all%</span>
+                        </button>   
+                        <button type="button" class="btn-upload-queue-action" id="btn-clear-uploads-list-id">
+                            <span class="btn-clear-uploads-list-text">%clear_uploads_list%</span>
+                            <span class="btn-clear-uploads-list-text-short">%clear_list%</span>
+                        </button>
+                        <button type="button" class="btn-upload-queue-action hidden" id="btn-retry-all-id">
+                            <span class="btn-retry-all-text">%retry_all%</span>
+                            <span class="btn-retry-all-text-short">%retry%</span>
+                        </button>
+                    </span>
+                </div>
+                <div class="modal-upload-header__close" data-dismiss="modal">%close%</div>
+            </div>
+            <div class="modal-body modal-upload-body">
+                <div class="file-upload-list" id="table-uploads-id"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="create-modal" tabindex="-1">
+    <div class="modal-dialog common-modal">
+        <div class="modal-content">
+            <div class="common-modal-header">
+                <h4 class="common-modal-header__title">%create_folder%</h4>
+                <span class="common-modal-header__close" data-dismiss="modal">%close%</span>
+            </div>
+            <div class="modal-body">
+                <label for="create-input" class="common-modal__label">%please_enter_the_name_of_the_folder%</label>
+                <form onsubmit="return false">
+                    <input type="text" class="common-modal__input" id="create-input" autocomplete="off" autofocus>
+                </form>
+            </div>
+            <div class="common-modal-footer">
+                <button type="button" class="common-button" id="create-confirm">%create%</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade network-down-modal" id="network-down-modal" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog common-modal">
+        <div class="modal-content">
+            <div class="common-modal-header">
+                <h4 class="common-modal-header__title network-down-header__title" id = "application-suspended-title-id">%application_suspended%</h4>
+                <h4 class="common-modal-header__title network-down-header__title hidden" id = "connection-closed-title-id">%connection_closed%</h4>
+            </div>
+            <div class="modal-body">
+                <div class = "connection-terminated-countdown" id = "connection-terminated-countdown-id">
+                    <div><label class="network-down__label">%connection_will_be_terminated_soon_please_open_application%</label></div>
+                    <div class="center-container"><label class="network-down-timer__label" id="timer_label"></label></div>
+                </div>
+                <div class = "connection-closed hidden" id = "connection-closed-id">
+                    <div class="center-container"><img class = "network-disconnect__icon" src = "/images/disconnect.png"/></div>
+                    <div class = "network-disconnect__label">%to_restore_connection_open_app%<br/>%type_received_ip_address%</div>
+                </div>
+            </div>
+            <div class="common-modal-footer center-container">
+                <button type="button" class="common-button" id="close-session">%close_connection%</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="verification-code-modal" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog common-modal">
+        <div class="modal-content">
+            <div class="common-modal-header center-container">
+                <h4 class="common-modal-header__title verification-code-header__title"><img class="verification-code-header__icon" src="/images/wifi-transfer-icon.png"/>%wifi_transfer%</h4>
+            </div>
+            <div class="modal-body verification-code-body-container">
+                <div class = "center-container"><label class="verification-code-auth-required__label" id="verification-code-auth-required__label">%auth_required%</label></div>
+                <div class = "center-container"><input type="text" class="verification-code__input" name="verification_code" id="verification-code-input"></div>
+                <div class = "center-container">
+                    <label class="verification-code-incorrect__label hidden" id="verification-code-incorrect__label">%incorrect_verification_code%</label>
+                    <label class="verification-code-correct__label hidden" id="verification-code-correct__label">%verification_code_correct%</label>
+                </div>
+                <div class = "center-container"><label class="verification-code-description__label" id="verification-code-description__label">%message_with_code_has_been_sent%<br/> %enter_the_code_to_continue%</label></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="delete-modal" tabindex="-1">
+    <div class="modal-dialog common-modal">
+        <div class="modal-content">
+            <div class="common-modal-header">
+                <h4 class="common-modal-header__title">%delete_files%</h4>
+                <span class="common-modal-header__close" data-dismiss="modal">%close%</span>
+            </div>
+            <div class="modal-body">
+                <p class="common-modal__label">%do_you_really_want_to_delete%</p>
+            </div>
+            <div class="common-modal-footer">
+                <button type="button" class="common-button common-button--warning" id="delete-confirm">%delete%</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="move-modal" tabindex="-1">
+    <div class="modal-dialog common-modal">
+        <div class="modal-content">
+            <div class="common-modal-header">
+                <h4 class="common-modal-header__title">%rename%</h4>
+                <span class="common-modal-header__close" data-dismiss="modal">%close%</span>
+            </div>
+            <div class="modal-body">
+                <label for="move-input" class="common-modal__label">%please_enter_the_name_for_this_item%</label>
+                <form onsubmit="return false">
+                    <input type="text" class="common-modal__input" id="move-input" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                </form>
+            </div>
+            <div class="common-modal-footer">
+                <button type="button" class="common-button" id="move-confirm">%rename%</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popover-button-cell-options" class="hide popover-button-cell-options">
+    <p class="list-heading">
+        <span class="list-heading-title">
+            <img class="list-heading-icon" id="popover-options-img-id"/>
+            <span class="list-heading-title-text" id="popover-options-title-id">%title_string%</span>
+        </span>
+    </p>
+    <ul class="list-group">
+        <a class="list-group-item menu-item-rename borderless" id="action-rename-id" href="javascript:actionRename();">
+            <img class="menu-icon" src="/images/options-rename.png"/>
+            <span class="menu-label">%rename%</span>
+        </a>
+        <a class="list-group-item menu-item-download borderless" id="action-download-id" href="javascript:actionDownload();">
+            <img class="menu-icon" src="/images/options-download.png"/>
+            <span class="menu-label">%download%</span>
+        </a>
+        <a class="list-group-item menu-item-delete borderless" id="action-delete-id" href="javascript:actionDelete();">
+            <img class="menu-icon" src="/images/options-delete.png"/>
+            <span class="menu-label">%delete%</span>
+        </a>
+    </ul>
+</div>
+
+
+<div id="popover-button-cell-contextmenu-id" class="hide popover-button-cell-contextmenu">
+        <p class="list-heading">
+            <span class="list-heading-title">
+                <img class="list-heading-icon-large" id="popover-contextmenu-img-id"/>
+                <span class="list-heading-title-text" id="popover-contextmenu-title-id">%title_string%</span>
+            </span>
+        </p>
+        <ul class="list-group">
+            <a class="list-group-item menu-item-rename borderless" id="action-rename-multiple-id" href="javascript:actionMultipleRename();">
+                <img class="menu-icon" id="img-rename-multiple-id" src="/images/options-rename.png"/>
+                <span class="menu-label" id="span-rename-multiple-id">%rename%</span>
+            </a>
+            <a class="list-group-item menu-item-download borderless" id="action-download-multiple-id" href="javascript:actionMultipleDownload();">
+                <img class="menu-icon" src="/images/options-download.png"/>
+                <span class="menu-label">%download%</span>
+            </a>
+            <a class="list-group-item menu-item-delete borderless" id="action-delete-multiple-id" href="javascript:actionMultipleDelete();">
+                <img class="menu-icon" src="/images/options-delete.png"/>
+                <span class="menu-label">%delete%</span>
+            </a>
+        </ul>
+</div>
+
+
+<div id="popover-btn-single-download-id" class="hide popover-btn-single-download">
+    <span class="popover-hover-title" id="popover-hover-title-id">%download%</span>
+</div>
+
+<div id="popover-btn-single-delete-id" class="hide popover-btn-single-delete">
+    <span class="popover-hover-title" id="popover-hover-title-id">%delete%</span>
+</div>
+
+<div id="popover-btn-single-rename-id" class="hide popover-btn-single-rename">
+    <span class="popover-hover-title" id="popover-hover-title-id">%rename%</span>
+</div>
+
+<script type="text/x-tmpl" id="template-uploads">
+    <div class="file-upload-list__item-progress-wrapper">
+        <div class="file-upload-list__item">
+            {% var fileName = o.name; %}
+            {% var ext = fileName.substr(fileName.lastIndexOf('.') + 1).toLowerCase(); %}
+            <div class="file-upload-list__icon"><img src="/fileicons?path=/_file.{%=ext%}" height = "32"/></div>
+            <div class="file-upload-list__name">{%=o.name%}</div>
+            <div class="file-upload-list__path">{%=o.path%}</div>
+            <div class="file-upload-list__size">{%=o.size%}</div>
+            <div class="file-upload-list__retry">
+                <a class="file-upload-list__retry_action">%retry%</a>
+            </div>
+            <div class="file-upload-list__action"></div>
+        </div>
+        <div class="file-upload-list__progress"></div>
+    </div>
+</script>
+                 
+<script type="text/x-tmpl" id="template-alert">
+    <div id="error-alert" class="alert alert-{%=o.level%} alert-dismissable">
+        <button type="button" id="btn-close-alert" class="close" data-dismiss="alert">&times;</button>
+        <strong>{%=o.title%}</strong>{%=o.description%}
+    </div>
+</script>
+
+
+<script type="text/x-tmpl" id="template-safari-error-alert">
+    <div id="error-alert" class="alert alert-danger alert-dismissable">
+        <button type="button" id="btn-close-alert" class="close" data-dismiss="alert">&times;</button>
+        <strong>%error%:</strong> %folder_upload_not_supported_by_your_browser% <a style = "float: right;"href="https://www.google.com/chrome/" class="alert-link">%download_chrome%</a>
+    </div>
+</script>
+
+<script type="text/x-tmpl" id="template-docs-error-alert">
+    <div id="error-alert" class="alert alert-danger alert-dismissable">
+    <button type="button" id="btn-close-alert" class="close" data-dismiss="alert">&times;</button>
+    <strong>%error%:</strong> %folder_upload_not_supported_by_your_browser% <a style = "float: right;"href="https://www.google.com/chrome/" class="alert-link">%download_chrome%</a>
+    </div>
+</script>
+                     
+<script type="text/x-tmpl" id="template-pswp-alert">
+    <div id="pswp-error-alert" class="alert alert-{%=o.level%} alert-dismissable pswp-error-alert">
+        <button type="button" id="btn-close-alert" class="close" data-dismiss="alert">&times;</button>
+        <strong>{%=o.title%}</strong>{%=o.description%}
+    </div>
+</script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      
+    <div id="pswp_alerts"></div>
+    
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+           
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="%close_esc_str%"></button>
+
+                <button class="pswp__button pswp__button--share" title="%download_str%"></button>
+
+                <button class="pswp__button pswp__button--fs" title="%toggle_fullscreen_str%"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="%zoom_in_out_str%"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="%prev_arrow_left_str%">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="%next_arrow_right_str%">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+</div>
+
+
+</body>
+</html>

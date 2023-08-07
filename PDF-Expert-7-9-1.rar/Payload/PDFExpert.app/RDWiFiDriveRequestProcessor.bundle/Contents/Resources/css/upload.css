@@ -1,0 +1,600 @@
+/** ------------- DROPZONE ------------- **/
+td {
+    border-right: 0!important;
+    border-left: 0!important;
+}
+
+tr.dropzone.in.hover {
+    border: 4px solid #2fa5ff;
+}
+
+.good-browser tr.dropzone.in.hover {
+    border: 0;
+}
+
+.good-browser tr.dropzone.in.hover td::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.good-browser  tr.dropzone.in.hover td {
+    position: relative;
+    border-spacing: 0;
+}
+
+.good-browser  tr.dropzone.in.hover td:first-child::before {
+    -webkit-box-shadow: inset 4px 0px 0 0px #2fa5ff, inset 0 4px 0 0 #2fa5ff, inset 0 -4px 0 0 #2fa5ff;
+    box-shadow: inset 4px 0px 0 0px #2fa5ff, inset 0 4px 0 0 #2fa5ff, inset 0 -4px 0 0 #2fa5ff;
+}
+
+.good-browser  tr.dropzone.in.hover td:not(:first-child):not(:last-child)::before {
+    -webkit-box-shadow: inset 0 4px 0 0 #2fa5ff, inset 0 -4px 0 0 #2fa5ff;
+    box-shadow: inset 0 4px 0 0 #2fa5ff, inset 0 -4px 0 0 #2fa5ff;
+}
+
+.good-browser tr.dropzone.in.hover td:last-child::before {
+    -webkit-box-shadow: inset -4px 0px 0 0px #2fa5ff, inset 0 4px 0 0 #2fa5ff, inset 0 -4px 0 0 #2fa5ff;
+    box-shadow: inset -4px 0px 0 0px #2fa5ff, inset 0 4px 0 0 #2fa5ff, inset 0 -4px 0 0 #2fa5ff;
+}
+
+body.dropzone.in.hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+body.dropzone.in.hover .global-dropzone-border {
+    display: block;
+}
+
+.global-dropzone-border {
+    display: none;
+}
+
+.global-dropzone-border--left,
+.global-dropzone-border--right,
+.global-dropzone-border--top,
+.global-dropzone-border--bottom {
+    position: fixed;
+    background: #2fa5ff;
+    z-index: 1;
+}
+
+.global-dropzone-border--left,
+.global-dropzone-border--right {
+    top: 0;
+    bottom: 0;
+    width: 6px;
+}
+.global-dropzone-border--left {
+    left: 0;
+}
+.global-dropzone-border--right {
+    right: 0;
+}
+
+.global-dropzone-border--top,
+.global-dropzone-border--bottom {
+    left: 0;
+    right: 0;
+    height: 6px;
+}
+.global-dropzone-border--top {
+    top: 0;
+}
+.global-dropzone-border--bottom {
+    bottom: 0;
+}
+
+/** ------------- DROPZONE END ------------- **/
+
+.global-upload-panel {
+    position: fixed;
+    z-index: 1000;
+    bottom: 52px;
+    left: calc(50% - 240px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 480px;
+    height: 68px;
+    border-radius: 4px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.global-upload-panel__status {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.global-upload-panel__hint {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.global-upload-panel__details {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 112px;
+    flex: 0 0 112px;
+    color: #2fa5ff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.global-upload-panel__progress {
+    position: absolute;
+    height: 4px;
+    background-color: #2fa5ff;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: width 0.4s linear;
+    -o-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+}
+
+.global-upload-result-panel {
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    flex-direction: row;
+    -webkit-box-orient: row;
+    -ms-flex-direction: row;
+    
+    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+    text-align: left;
+}
+
+.global-upload-result-panel__icon {
+    -webkit-box-flex: 1;
+    -ms-flex: 0 0 14px;
+    flex: 0 0 14px;
+    max-height: 20px;
+    max-width: 34px;
+}
+
+.global-upload-result-icon-img {
+    height: 14px;
+    width: 14px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+
+.global-upload-result__status {
+    max-width: 317px;
+    max-height: 25px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 317px;
+    flex: 0 1 317px;
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.global-upload-result__action{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50px;
+    flex: 1 1 50px;
+    color: #2fa5ff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: right;
+}
+
+
+.file-upload-list {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.file-upload-list__item-progress-wrapper {
+    position: relative;
+    padding: 0;
+    height: 62px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.file-upload-list__item-progress-wrapper .file-upload-list__item {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.file-upload-list__item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 24px 0 32px;
+    font-weight: 300;
+}
+
+.file-upload-list__item.active {
+    background-color: #fff;
+}
+
+.file-upload-list__item.failed {
+    background-color: #fbefe1;
+}
+
+.file-upload-list__name {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #2b2b2b;
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+.file-upload-list__path {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 230px;
+    flex: 0 0 230px;
+    color: #8a8a8a;
+    text-align: right;
+    padding-right: 60px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.file-upload-list__size {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+    color: #8a8a8a;
+}
+
+.file-upload-list__retry {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+}
+
+.file-upload-list__retry_action {
+    color: #2fa5ff;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.file-upload-list__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px;
+}
+
+.file-upload-list__action {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.file-upload-list__remove, .file-upload-list__success, .file-upload-list__fail {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.file-upload-list__remove {
+    cursor: pointer;
+    background-image: url("../images/upload-cancel.png");
+}
+
+.file-upload-list__success {
+    background-image: url("../images/upload-success.png");
+}
+
+.file-upload-list__fail {
+    background-image: url("../images/upload-fail.png");
+}
+
+.file-upload-list__progress {
+    position: absolute;
+    height: 4px;
+    background-color: #2fa5ff;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: width 0.4s linear;
+    -o-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+}
+
+.modal-upload-dialog {
+    margin-top: 120px;
+}
+
+@media (min-width: 768px) {
+    .modal-upload-dialog {
+        width: auto !important;
+        max-width: 753px;
+    }
+}
+
+.modal-upload-content {
+    border-radius: 2px;
+    background-color: rgb(252, 252, 252);
+}
+
+.modal-upload-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 116px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 15px 40px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.modal-upload-header-title-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    flex-direction: column;
+    -webkit-box-orient: column;
+    -ms-flex-direction: column;
+    
+    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    
+    flex-grow: 6;
+}
+
+.modal-upload-body {
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.modal-upload-header__title {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 17px;
+    color: #424242;
+    font-size: 34px;
+    font-weight: 300;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.modal-upload-header__close {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    color: #2fa5ff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.upload-actions-container{
+    padding-left: 17px;
+    margin-top: 10px;
+}
+
+.upload-actions-container {
+
+}
+
+.btn-upload-queue-action {
+    height: 32px;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #dddddd;
+    border-radius: 4px !important;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    color: #2fa5ff;
+    background-color: #ffffff;
+    text-shadow: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+}
+
+.btn-upload-queue-action:hover {
+    color: #2fa5ff;
+    border: 1px solid #dddddd;
+    border-radius: 4px !important;
+    background-color: rgba(220, 220, 220, 0.6);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+}
+
+.btn-upload-queue-action:active {
+    color: #2fa5ff;
+    border: 1px solid #dddddd;
+    border-radius: 4px !important;
+    background-color: rgba(220, 220, 220, 1.0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+}
+         
+.btn-cancel-all-uploads-text {
+    display: inline;
+}
+
+.btn-cancel-all-uploads-text-short {
+    display: none;
+}
+
+.btn-clear-uploads-list-text {
+    display: inline;
+}
+
+.btn-clear-uploads-list-text-short {
+    display: none;
+}
+
+.btn-retry-all-text {
+    display: inline;
+}
+
+.btn-retry-all-text-short {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    
+    .btn-cancel-all-uploads-text {
+        display: none;
+    }
+
+    .btn-cancel-all-uploads-text-short {
+        display: inline;
+    }
+
+    .btn-clear-uploads-list-text {
+        display: none;
+    }
+
+    .btn-clear-uploads-list-text-short {
+        display: inline;
+    }
+    
+    .btn-retry-all-text {
+        display: none;
+    }
+
+    .btn-retry-all-text-short {
+        display: inline;
+    }
+
+    .modal-upload-header__title {
+        font-size: 22px;
+        padding-left: 0px;
+    }
+    
+    .upload-actions-container{
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+    
+    .modal-upload-header__close {
+        padding-left: 10px;
+    }
+    
+    .global-upload-panel {
+        left: calc(50% - 45%);
+        width: 90%;
+        bottom: 30px;
+    }
+    
+    .global-upload-panel__hint {
+        font-size: 14px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 80%;
+        flex: 1 0 80%;
+    }
+    
+    .global-upload-panel__status {
+        font-size: 14px;
+    }
+    
+    .global-upload-result__status{
+        font-size: 14px;
+    }
+    
+    .file-upload-list__item {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px 0 20px;
+    }
+    
+    .file-upload-list__name {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+    
+    .file-upload-list__path {
+        display: none;
+    }
+    
+    .file-upload-list__size {
+        display: none;
+    }
+    
+    .file-upload-list__icon {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+        flex: 0 0 40px;
+    }
+    
+    .file-upload-list__action {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20px;
+        flex: 0 0 20px;
+    }
+    
+}

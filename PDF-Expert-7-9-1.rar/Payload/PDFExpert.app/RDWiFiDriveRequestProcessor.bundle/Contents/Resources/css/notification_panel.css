@@ -1,0 +1,209 @@
+
+
+/*http://the-echoplex.net/flexyboxes/?fixed-height=on&display=flex&flex-direction=row&flex-wrap=nowrap&justify-content=space-between&align-items=center&align-content=stretch&order%5B%5D=0&flex-grow%5B%5D=0&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=auto&order%5B%5D=1&flex-grow%5B%5D=1&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=auto&order%5B%5D=2&flex-grow%5B%5D=0&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=auto*/
+
+.global-notification-panel {
+    position: fixed;
+    left: calc(50% - 272px);
+    z-index: 3000;
+    width: 544px;
+    height: 68px;
+    border-radius: 4px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    text-align: left;
+    overflow: hidden;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.global-notification-panel-bottom-position-top {
+    bottom: 132px;
+}
+
+.global-notification-panel-bottom-position-default {
+    bottom: 52px;
+}
+        
+.global-notification-panel__icon {
+
+    padding-left: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: 14px 7px;
+    cursor: pointer !important;
+    height: 28px;
+    width: 28px;
+    background-image: url("/images/disconnect_red.png");
+  
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    
+    
+} 
+
+/*http://the-echoplex.net/flexyboxes/?fixed-height=on&display=flex&flex-direction=column&flex-wrap=nowrap&justify-content=center&align-items=stretch&align-content=stretch&order%5B%5D=0&flex-grow%5B%5D=1&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=auto&order%5B%5D=1&flex-grow%5B%5D=1&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=auto*/
+
+.global-notification-panel__text {
+     -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    
+}    
+
+
+.global-notification-panel__status {
+    
+    color: rgba(34, 34, 34, 0.9);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+    max-width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap;
+    
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    
+}
+
+.global-notification-panel__description {
+    
+    color: rgba(34, 34, 34, 0.5);
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+    max-width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap;
+    
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    
+}
+
+
+.global-notification-panel__action {
+    
+    color: #ff5d5d;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 20px;
+    
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    
+}
+
+.global-notification-panel__progress {
+    position: absolute;
+    height: 4px;
+    background-color: #8a8a8a;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: width 0.4s linear;
+    -o-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+}
+
+@media (max-width: 600px) {
+    
+    .global-notification-panel {
+        left: calc(50% - 45%);
+        width: 90%; 
+    }
+    
+    .global-notification-panel-bottom-position-top {
+        bottom: 110px;
+    }
+
+    .global-notification-panel-bottom-position-default {
+        bottom: 30px;
+    }
+    
+    .global-notification-panel__status {
+        font-size: 14px;
+    }
+
+}
